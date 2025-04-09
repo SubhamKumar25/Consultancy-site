@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGC</title>
+    <link rel="icon" type="image/png" href="logo.jpg"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="tailwind.config.js"></script>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#">
+                    <img src="logo.jpg" alt="Profile" class="w-20 h-20 rounded-full mr-3">
+                  </a>
+                <div>
+                    <h1 class="text-xl font-bold text-blue-600">Saanvi Global Consultancy</h1>
+                    <p class="text-xs text-gray-600">Education & Admission Experts</p>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link font-medium">Home</a>
+                <a href="#services" class="nav-link font-medium">Services</a>
+                <a href="#about" class="nav-link font-medium">About Us</a>
+                <a href="#countries" class="nav-link font-medium">Destinations</a>
+                <a href="#testimonials" class="nav-link font-medium">Success Stories</a>
+                <a href="#contact" class="nav-link font-medium">Contact</a>
+            </nav>
+            
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="block py-2 font-medium">Home</a>
+                <a href="#services" class="block py-2 font-medium">Services</a>
+                <a href="#about" class="block py-2 font-medium">About Us</a>
+                <a href="#countries" class="block py-2 font-medium">Destinations</a>
+                <a href="#testimonials" class="block py-2 font-medium">Success Stories</a>
+                <a href="#contact" class="block py-2 font-medium">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Your Gateway to Global Education</h1>
+                <p class="text-xl mb-8">Expert guidance for admissions in India and abroad. Personalized coaching to help you achieve your academic dreams.</p>
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold text-center transition duration-300">Book Free Consultation</a>
+                    <a href="#services" class="border-2 border-white hover:bg-white hover:text-blue-600 px-6 py-3 rounded-lg font-semibold text-center transition duration-300">Explore Services</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Students studying" class="rounded-lg shadow-2xl max-w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-50 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">500+</div>
+                    <div class="text-gray-600">Students Guided</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">20+</div>
+                    <div class="text-gray-600">Countries Covered</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">95%</div>
+                    <div class="text-gray-600">Admission Success</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-blue-600 mb-2">15+</div>
+                    <div class="text-gray-600">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our Comprehensive Services</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">We provide end-to-end solutions for your educational journey, from career counseling to visa assistance.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600">
+                            <i class="fas fa-graduation-cap text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">University Admissions</h3>
+                        <p class="text-gray-600 mb-4">Expert guidance for selecting the right university and program based on your profile and aspirations.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Personalized university shortlisting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Application documentation support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Interview preparation</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600">
+                            <i class="fas fa-chalkboard-teacher text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Test Preparation</h3>
+                        <p class="text-gray-600 mb-4">Specialized coaching for standardized tests required for international admissions.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>10th/11th-12th coaching</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>JEE/NEETPreparation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>CAT/MATpreparation</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="p-6">
+                        <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600">
+                            <i class="fas fa-briefcase text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Career Counseling</h3>
+                        <p class="text-gray-600 mb-4">Strategic guidance to align your education with future career opportunities.</p>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Career aptitude assessment</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Industry trend analysis</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Internship and job search strategies</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Our team" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6">About Sanvi Global Consultancy</h2>
+                    <p class="text-lg text-gray-600 mb-6">Founded in 2008, Sanvi Global Consultancy has been a trusted partner for students aspiring to pursue education in India and abroad. Our team of experienced counselors and education experts are dedicated to helping you navigate the complex world of higher education.</p>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-600">Our Mission</h3>
+                        <p class="text-gray-600">To empower students with accurate information, personalized guidance, and comprehensive support to make informed decisions about their education and career paths.</p>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-600">Our Approach</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                <span><strong>Personalized Attention:</strong> One-on-one counseling tailored to each student's needs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                <span><strong>Transparent Process:</strong> Clear communication at every step of the journey</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                <span><strong>Ethical Practices:</strong> Honest advice with the student's best interest at heart</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                                <span><strong>End-to-End Support:</strong> From initial counseling to post-arrival assistance</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">Get in Touch</a>
+                        <a href="#testimonials" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-semibold transition duration-300">See Success Stories</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countries Section -->
+    <section id="countries" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Popular Study Destinations</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">We have successfully placed students in top universities across these countries.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <!-- Country 1 -->
+                <div class="country-flag bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-gray-200">
+                        <img src="https://flagcdn.com/w320/us.png" alt="USA" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">United States</h3>
+                    <p class="text-gray-600 text-sm">500+ universities</p>
+                </div>
+                
+                <!-- Country 2 -->
+                <div class="country-flag bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-gray-200">
+                        <img src="https://flagcdn.com/w320/ca.png" alt="Canada" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">Canada</h3>
+                    <p class="text-gray-600 text-sm">PR opportunities</p>
+                </div>
+                
+                <!-- Country 3 -->
+                <div class="country-flag bg-white rounded-lg shadow-md p-6 text-center hover:widget-lg">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-gray-200">
+                        <img src="https://flagcdn.com/w320/gb.png" alt="UK" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">United Kingdom</h3>
+                    <p class="text-gray-600 text-sm">World-class education</p>
+                </div>
+                
+                <!-- Country 4 -->
+                <div class="country-flag bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-gray-200">
+                        <img src="https://flagcdn.com/w320/au.png" alt="Australia" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">Australia</h3>
+                    <p class="text-gray-600 text-sm">High quality of life</p>
+                </div>
+                
+                <!-- Country 5 -->
+                <div class="country-flag bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-gray-200">
+                        <img src="https://flagcdn.com/w320/de.png" alt="Germany" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">Germany</h3>
+                    <p class="text-gray-600 text-sm">Tuition-free education</p>
+                </div>
+                
+                <!-- Country 6 -->
+                <div class="country-flag bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-gray-200">
+                        <img src="https://flagcdn.com/w320/in.png" alt="India" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">India</h3>
+                    <p class="text-gray-600 text-sm">Top institutions</p>
+                </div>
+                
+                <!-- Country 7 -->
+                <div class="country-flag bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-gray-200">
+                        <img src="https://flagcdn.com/w320/ie.png" alt="Ireland" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">Ireland</h3>
+                    <p class="text-gray-600 text-sm">Tech hub of Europe</p>
+                </div>
+                
+                <!-- Country 8 -->
+                <div class="country-flag bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-gray-200">
+                        <img src="https://flagcdn.com/w320/nz.png" alt="New Zealand" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">New Zealand</h3>
+                    <p class="text-gray-600 text-sm">Research opportunities</p>
+                </div>
+                
+                <!-- Country 9 -->
+                <div class="country-flag bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-gray-200">
+                        <img src="https://flagcdn.com/w320/fr.png" alt="France" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">France</h3>
+                    <p class="text-gray-600 text-sm">Affordable education</p>
+                </div>
+                
+                <!-- Country 10 -->
+                <div class="country-flag bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-2 border-gray-200">
+                        <img src="https://flagcdn.com/w320/sg.png" alt="Singapore" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="font-bold text-lg mb-1">Singapore</h3>
+                    <p class="text-gray-600 text-sm">Asian education hub</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300">Explore More Options</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Success Stories</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Hear from students who achieved their dreams with our guidance.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card rounded-xl p-8 shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Priya K." class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Priya K.</h4>
+                        <p class="text-gray-600">MS in Computer Science, USA</p>
+                    </div>
+                </div>
+                <div class="text-gray-700 mb-4">
+                    <i class="fas fa-quote-left text-blue-200 mr-2"></i>
+                    Sanvi Global helped me get into my dream university with a 50% scholarship. Their guidance on SOP preparation and interview tips were invaluable. I wouldn't be at Stanford without their support!
+                    <i class="fas fa-quote-right text-blue-200 ml-2"></i>
+                </div>
+                <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card rounded-xl p-8 shadow-md">
+                <div class="flex items-center mb-6">
+                    <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Rahul S." class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Rahul S.</h4>
+                        <p class="text-gray-600">MBA in Canada</p>
+                    </div>
+                </div>
+                <div class="text-gray-700 mb-4">
+                    <i class="fas fa-quote-left text-blue-200 mr-2"></i>
+                    The visa process seemed daunting, but Sanvi's team made it so smooth. They caught errors in my documents I would have missed. Now I'm at Rotman School of Management with a clear path to permanent residency.
+                    <i class="fas fa-quote-right text-blue-200 ml-2"></i>
+                </div>
+                <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card rounded-xl p-8 shadow-md">
+                <div class="flex items-center mb-6">
+                    <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ananya P." class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Ananya P.</h4>
+                        <p class="text-gray-600">B.Tech in India</p>
+                    </div>
+                </div>
+                <div class="text-gray-700 mb-4">
+                    <i class="fas fa-quote-left text-blue-200 mr-2"></i>
+                    Their coaching for JEE Mains helped me improve my rank by 15,000 positions! The personalized study plan and regular mock tests were exactly what I needed to secure admission at IIT Delhi.
+                    <i class="fas fa-quote-right text-blue-200 ml-2"></i>
+                </div>
+                <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300">Start Your Success Story</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row">
+            <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+                <p class="text-lg text-gray-600 mb-8">Have questions about studying abroad or in India? Our expert counselors are ready to help you with personalized guidance.</p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4 text-blue-600">
+                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">Our Office</h4>
+                            <p class="text-gray-600">Ratu Road, Ranchi - 834001, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4 text-blue-600">
+                            <i class="fas fa-phone-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">Call Us</h4>
+                            <p class="text-gray-600">+91 1234567890 (WhatsApp available)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4 text-blue-600">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">Email Us</h4>
+                            <p class="text-gray-600">info@saanviglobalconsultancy.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-3 rounded-lg mr-4 text-blue-600">
+                            <i class="fas fa-clock text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">Working Hours</h4>
+                            <p class="text-gray-600">Monday - Saturday: 10:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8">
+                    <h4 class="font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-pink-600 text-white rounded-full flex items-center justify-center hover:bg-pink-700 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center hover:bg-blue-800 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition duration-300">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2">
+                <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+                    <h3 class="text-2xl font-bold mb-6">Book a Free Consultation</h3>
+                    <form id="contact-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                            </div>
+                            <div>
+                                <label for="country" class="block text-gray-700 font-medium mb-2">Preferred Country</label>
+                                <select id="country" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option value="India">India</option>
+                                    <option value="">Select Country</option>
+                                    <option value="USA">United States</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="course" class="block text-gray-700 font-medium mb-2">Course Interested In</label>
+                            <input type="text" id="course" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Find answers to common questions about our services and the admission process.</p>
+        </div>
+        
+        <div class="max-w-3xl mx-auto">
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <h3 class="font-semibold text-lg">When should I start the application process for studying abroad?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">We recommend starting the process at least 12-18 months before your intended start date. This gives you ample time for test preparation, university research, application submissions, and visa processing. For countries like the USA where applications are due nearly a year in advance, early preparation is crucial.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <h3 class="font-semibold text-lg">How do you help with scholarship applications?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">Our scholarship assistance includes identifying suitable funding opportunities based on your profile, preparing compelling scholarship essays, highlighting your achievements effectively, and guiding you through the application requirements. We've helped students secure over ₹5 crores in scholarships last year alone.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <h3 class="font-semibold text-lg">What's the difference between your free and paid services?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">Our free services include initial counseling, basic university information, and general guidance. Paid services offer comprehensive support including detailed university shortlisting, application documentation review, visa filing assistance, test preparation coaching, and post-admission support. We're transparent about all costs upfront.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <h3 class="font-semibold text-lg">Can you help with education loans?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">Yes, we have partnerships with leading banks and financial institutions. We can guide you through the loan application process, help with documentation, and connect you with the right loan products based on your university and course choice. We also provide guidance on loan repayment strategies.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left focus:outline-none">
+                        <h3 class="font-semibold text-lg">How do you select which universities to recommend?</h3>
+                        <i class="fas fa-chevron-down text-blue-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-6 hidden">
+                        <p class="text-gray-600">Our recommendations are based on multiple factors including your academic profile, test scores, budget, career goals, preferred location, and our extensive knowledge of university strengths. We consider graduation outcomes, internship opportunities, faculty quality, and alumni networks to suggest the best fits for you.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300">Have More Questions? Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="py-16 bg-blue-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">Subscribe to our newsletter for the latest updates on admissions, scholarships, and education trends.</p>
+        
+        <form class="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
+            <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-lg focus:outline-none text-gray-800">
+            <button type="submit" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition duration-300">Subscribe</button>
+        </form>
+        
+        <p class="text-sm mt-4 text-blue-100">We respect your privacy. Unsubscribe at any time.</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <!-- Column 1 -->
+            <div>
+                <div class="flex items-center mb-4">
+                    <a href="#">
+                    <img src="logo.jpg" alt="Profile" class="w-20 h-20 rounded-full mr-3">
+                  </a>
+                    <div>
+                        <h3 class="font-bold text-lg">Saanvi Global Consultancy</h3>
+                    </div>
+                </div>
+                <p class="text-gray-400 mb-4">Your trusted partner for education and career guidance since 2017.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <!-- Column 2 -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                    <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                    <li><a href="#countries" class="text-gray-400 hover:text-white transition duration-300">Study Destinations</a></li>
+                    <li><a href="#testimonials" class="text-gray-400 hover:text-white transition duration-300">Success Stories</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Column 3 -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">University Admissions</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Visa Assistance</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Test Preparation</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Career Counseling</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Accommodation Support</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Pre-Departure Briefing</a></li>
+                </ul>
+            </div>
+            
+            <!-- Column 4 -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                <ul class="space-y-3 text-gray-400">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                        <span>Ratu Road, Ranchi - 834001, India</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-phone-alt mr-3 text-blue-400"></i>
+                        <span>+91 1234567890</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope mr-3 text-blue-400"></i>
+                        <span>info@saanviglobalconsultancy.com</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-clock mr-3 text-blue-400"></i>
+                        <span>Mon-Sat: 10:00 AM - 7:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-800 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Sanvi Global Consultancy. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with us</span>
+</a>
+
+<!-- Back to Top Button -->
+<button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="assets/"></script>
+</body>
+</html>
